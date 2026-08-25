@@ -5,46 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Borodina Apps</title>
 <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
+    background: #0f0f12;
+    color: #f2f2f7;
     min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    padding: 64px 24px 48px;
+  }
+  header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  header p {
+    margin-top: 8px;
+    color: #8e8e93;
+    font-size: 16px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #0d59d9, #063389);
-    color: #fff;
-    text-align: center;
-    padding: 24px;
+    gap: 16px;
   }
-  .logo {
-    width: 88px; height: 88px;
-    border: 6px solid #fff;
-    border-radius: 50%;
+  .app-card {
+    background: #1c1c1e;
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 46px;
-    font-weight: 800;
-    margin-bottom: 18px;
+    font-size: 30px;
+    flex-shrink: 0;
   }
-  h1 { margin: 0 0 6px; font-size: 30px; font-weight: 800; }
-  p { margin: 0 0 24px; opacity: 0.8; }
-  a {
-    color: #063389;
-    background: #fff;
-    text-decoration: none;
+  .app-info { flex: 1; }
+  .app-name {
+    font-size: 18px;
     font-weight: 700;
-    padding: 12px 22px;
-    border-radius: 12px;
+    margin-bottom: 3px;
   }
+  .app-tagline {
+    font-size: 14px;
+    color: #8e8e93;
+    line-height: 1.4;
+  }
+  .privacy-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  footer {
+    text-align: center;
+    color: #48484a;
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  footer a { color: #48484a; }
 </style>
 </head>
 <body>
-  <div class="logo">P</div>
+<header>
   <h1>Borodina Apps</h1>
-  <p>Maker of Can I Park Here — snap a sign, get your answer.</p>
-  <a href="privacy.html">Privacy Policy</a>
+  <p>Simple, useful apps for iPhone and iPad.</p>
+</header>
+<main>
+
+  <div class="app-card">
+    <div class="app-icon" style="background: linear-gradient(180deg, #ff6614, #c72303);">🍳</div>
+    <div class="app-info">
+      <div class="app-name">Pressurize</div>
+      <div class="app-tagline">Turn any recipe into a pressure cooker version in seconds.</div>
+      <a class="privacy-link" href="pressurize-privacy.html" style="background:#ff661420; color:#ff6614;">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="app-card">
+    <div class="app-icon" style="background: linear-gradient(180deg, #bf1a1a, #7a0000);">🥩</div>
+    <div class="app-info">
+      <div class="app-name">Steak IQ</div>
+      <div class="app-tagline">Cook steak perfectly every time with AI-powered guidance.</div>
+      <a class="privacy-link" href="steakiq-privacy.html" style="background:#bf1a1a20; color:#bf1a1a;">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="app-card">
+    <div class="app-icon" style="background: linear-gradient(180deg, #0d59d9, #063389);">🅿️</div>
+    <div class="app-info">
+      <div class="app-name">Can I Park Here</div>
+      <div class="app-tagline">Snap a parking sign and get an instant answer.</div>
+      <a class="privacy-link" href="privacy.html" style="background:#0d59d920; color:#0d59d9;">Privacy Policy</a>
+    </div>
+  </div>
+
+</main>
+<footer>
+  <p>© 2026 Borodina Apps &nbsp;·&nbsp; <a href="mailto:supercatdev@gmail.com">supercatdev@gmail.com</a></p>
+</footer>
 </body>
 </html>
