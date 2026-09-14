@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — RateMate</title>
+<style>
+  :root {
+    --blue: #00B4DB;
+    --blue-dark: #0057B7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #1c1c1e;
+    background: #f5f6f8;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  .logo {
+    width: 72px; height: 72px;
+    border: 5px solid rgba(255,255,255,0.4);
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  header h1 { margin: 0; font-size: 28px; font-weight: 800; }
+  header p { margin: 6px 0 0; opacity: 0.85; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+  h2 { font-size: 20px; margin-top: 36px; color: var(--blue-dark); }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 4px 24px 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .summary {
+    background: #e8f4fb;
+    border: 1px solid var(--blue);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+  a { color: var(--blue-dark); }
+  footer { text-align: center; color: #8e8e93; font-size: 13px; padding: 0 24px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><img src="icon.png" width="62" height="62" alt="RateMate" style="border-radius:13px;object-fit:cover;display:block;"></div>
+  <h1>Privacy Policy</h1>
+  <p>RateMate — Effective September 13, 2026</p>
+</header>
+<main>
+  <div class="summary">
+    <strong>The short version:</strong> RateMate uses what you type to generate a review with AI — we never store it, never see who you are, and there are no accounts, ads, or tracking.
+  </div>
+
+  <div class="card">
+    <h2>What the app does with your data</h2>
+    <p>
+      When you tap "Generate My Review," the app sends the venue name, venue type, your
+      star ratings, and any optional notes you entered to our secure proxy server, which
+      forwards them to OpenAI's API to generate a review. This data is transmitted only
+      when you explicitly request a review.
+    </p>
+
+    <h2>What we do <em>not</em> do</h2>
+    <ul>
+      <li>We do not store your venue details, ratings, or notes on our servers. They are processed in memory and discarded after the review is returned.</li>
+      <li>We do not require an account, and we do not know who you are.</li>
+      <li>We do not collect your location. You type the venue name manually — the app never uses GPS or location permissions for this purpose. (Optional city/neighborhood search uses Apple's MapKit framework on-device.)</li>
+      <li>We do not show ads, use analytics SDKs, or track you across apps.</li>
+      <li>We do not sell or share your information.</li>
+    </ul>
+
+    <h2>What stays on your device</h2>
+    <p>
+      All venue details, ratings, and generated review text are stored only in memory
+      while the app is open. Nothing is saved to persistent storage. Closing the app
+      clears everything.
+    </p>
+
+    <h2>Third parties</h2>
+    <p>
+      <strong>OpenAI</strong> processes your venue and rating data to generate review
+      text, subject to
+      <a href="https://openai.com/policies/api-data-usage-policies">OpenAI's API data usage policies</a>;
+      API data is not used to train their models.
+      <strong>DigitalOcean</strong> hosts our proxy server; like most hosting
+      providers, it may keep short-lived operational logs (such as IP addresses) for
+      security and abuse prevention.
+      <strong>Apple's MapKit</strong> handles venue search suggestions on-device; no
+      data is sent to Apple beyond what MapKit normally processes for search.
+    </p>
+
+    <h2>Children</h2>
+    <p>RateMate is not directed at children under 13, and we do not knowingly collect information from them.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, we will update this page and the effective date above.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:borodinaapps@gmail.com">borodinaapps@gmail.com</a>.</p>
+  </div>
+</main>
+<footer>© 2026 Borodina Apps</footer>
+</body>
+</html>
